@@ -1,0 +1,242 @@
+.navbar {
+    /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    position: relative;
+    width: 100%;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  svg.logo-svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .nav-menu {
+    display: flex;
+    grid-gap: 20px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    margin-right: 2rem;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    height: 80px;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  
+  .nav-links:hover {
+      border-bottom: 4px solid #a5a5a5;
+      transition: all 0.2s ease-out;
+      color: #a5a5a5;
+  }
+  
+  .fa-bars {
+    color: #e8e8e8;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+
+  .logo2 {
+    display: flex;
+    width: 15vw;
+    justify-content: space-around;
+  }
+
+  .logo2 img {
+    width: 25px;
+    cursor: pointer;
+  }
+
+  
+  
+  .lupa:hover{
+    transform: scale(1.08);
+  }
+  .carinho:hover{
+    transform: scale(1.08);
+  }
+
+  #apple{
+      position: absolute;
+      /* top: 45%;
+      left: 12%; */
+      transform: translate(-80%, -50%);
+      width: 60px;
+      height: 60px;
+      animation: fill 1.5s ease forwards 4.2s;
+  }
+  #apple path:nth-child(1){
+      stroke-dasharray: 977;
+      stroke-dashoffset: 977;
+      animation: line-animation 8.5s ease forwards;
+  }
+
+  @keyframes line-animation {
+      to{
+        stroke-dashoffset: 0;
+      }
+  }
+
+  @keyframes fill {
+    from{
+        fill: transparent;
+    }
+      to{
+          fill: #e8e8e8;
+      }
+  }
+
+
+  
+  
+  @media screen and (max-width: 960px) {
+
+    
+
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .nav-menu.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: -1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #e8e8e8;
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+    }
+    .logo {
+      width: 50px;
+    }
+
+    #apple {
+      position: absolute;
+      transform: translate(-50%, 10%);
+  }
+  }
+  
+
+
+
+
+
